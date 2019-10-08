@@ -1,0 +1,17 @@
+.b1
+{background-image: url(/assets/img/welcomebg.jpg);
+   color: aliceblue; 
+    }
+    .c1
+{background-image: transparent;
+   color: aliceblue; 
+   height:50%;
+   width: 60%;
+   margin-left: 250px;
+  opacity: 1;
+ color:white;
+   justify-content: center;
+   align-items: center;
+ 
+    }
+  

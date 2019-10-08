@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<script>
+function myFunction() {
+  alert("Please Choose From Below Options");
+}
+</script>
+
+<head>
+	<title>Mentor's Dashboard</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+
+<body class="b2">
+	<header class="h1"  style=" height: 120px ;font-size:80PX ;margin-top: 0px; ">
+		<Strong style="color: white;text-shadow: 0 8px 16px rgba(255,255,255,.6) ; margin-left:300px;" >Mentor's Dashboard</Strong></header>
+
+
+	
+
+<button class="btn btn-primary" onclick="myFunction()"  style="background-color: transparent; font-size: 60px;margin-left:350px;">CHOOSE AN OPTION</button><br>
+
+<div class="container-fluid well" style="background: black">
+<div class="row"> 
+
+	<a href="/mentornotification"  class="col-lg-4 btn btn-primary"  style="background-color: transparent; font-size: 20px;" onclick="alert('No notification');"onclick="alert('No notification');">Notification</a>
+  <a routerLink="/mentormenu"  class="col-lg-4 btn btn-primary" style="background-color: transparent; font-size: 20px;  ">Mentor Profile</a>
+
+  <a routerLink="/home"  class="col-lg-4  btn btn-primary"  style="background-color: transparent; font-size: 20px;">Logout</a>
+</div>
+  <div class="row">
+  
+  <a routerLink="/mentorcurrenttraining"  class="col-lg-4 btn btn-primary" style="background-color: transparent; font-size: 20px; box-shadow: 0 8px 16px rgba(255,255,255,0.6);  ">Trainings</a>
+  <a routerLink="/editskills"  class="col-lg-4 btn btn-primary" style="background-color: transparent; font-size: 20px; ">Edit Skills</a>
+  <a routerLink="/mentorpayment"  class="col-lg-4 btn btn-primary" style="background-color: transparent; font-size: 20px; ">Manage Payments</a>
+ </div>
+</div>
+
+<table  class=" col-lg-9 ,table table-striped  "    style="background-color: transparent; border-style: solid;border-color:white;  font-size: 20px; width: 60%;margin-left: 200px;margin-bottom: 50px;"> 
+   
+   <caption style="color: orange"><strong>Current Training</strong></caption> 
+    <thead>
+     
+    <tr style="color: white;">
+     
+      <th>UserId</th>
+      <th>Training ID</th>
+      <th>Progress</th>
+      <th>Fees</th>
+      <th>Rating</th>
+  
+    </tr>
+    </thead>
+    <tr style="color: yellow;" *ngFor="let m of mentorcurrenttraining">
+       
+        <td *ngIf="m.progress != 100">{{m.userId}}</td>
+        <td *ngIf="m.progress != 100">{{m.trainingId}}</td>
+        <td *ngIf="m.progress != 100">
+            <circle-progress
+            [percent]=m.progress
+            [radius]="40"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="5"
+            [outerStrokeColor]="'#78C000'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="300"
+            [backgroundColor]="transparent"
+            [titleColor]="'#edd02b'"
+          ></circle-progress>
+        </td>
+        <td *ngIf="m.progress != 100">{{m.fes}}</td>
+        <td *ngIf="m.progress != 100"><ngb-rating rate={{m.rating}}></ngb-rating></td>
+     
+        
+        </tr>
+  </table>
+  
+  
+<table  class=" col-lg-9 ,table table-striped  "    style="background-color: transparent; border-style: solid;border-color:white;  font-size: 20px; width: 60%;margin-left: 200px"> 
+    <caption style="color: green"><strong>Completed Training</strong></caption> 
+    <thead>
+  <tr style="color: white;">
+    <th class="hidden" >Id</th>
+    <th>UserId</th>
+    <th>Training ID</th>
+    <th>Progress</th>
+    <th>Fees</th>
+    <th>Rating</th>
+
+  </tr>
+  </thead>
+  <tr style="color: yellow;" *ngFor="let m of mentorcurrenttraining">
+      <td class="hidden">{{m.id}}</td>
+      <td *ngIf="m.progress == 100">{{m.userId}}</td>
+      <td *ngIf="m.progress == 100">{{m.trainingId}}</td>
+      <td *ngIf="m.progress == 100">
+          <circle-progress
+          [percent]=m.progress
+          [radius]="40"
+          [outerStrokeWidth]="16"
+          [innerStrokeWidth]="5"
+          [outerStrokeColor]="'#78C000'"
+          [innerStrokeColor]="'#C7E596'"
+          [animation]="true"
+          [animationDuration]="300"
+          [backgroundColor]="transparent"
+          [titleColor]="'#edd02b'"
+        ></circle-progress>
+      </td>
+      <td *ngIf="m.progress == 100">{{m.fes}}</td>
+      <td *ngIf="m.progress == 100"><ngb-rating rate={{m.rating}}></ngb-rating></td>
+   
+      
+      </tr>
+</table>
+  <br><br><br><br><br><br><br><br>
+  <br>
+  <br>   
+  <br><br><br><br><br><br><br><br>
+  <br>
+  <br>   
+  <br><br><br><br><br><br><br><br>
+      
+
+  
+<br>
+<br>   
+<br><br><br><br><br><br><br><br>
+
+</body>
+</html>

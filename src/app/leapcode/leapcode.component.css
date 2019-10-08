@@ -1,0 +1,77 @@
+.b1
+{background-image: url(/assets/img/welcomebg.jpg);
+   color: aliceblue; 
+    }
+    .h1{
+        background-image: url('https://www.redwallpapers.com/public/redwallpapers-large-thumb/black-background-texture-free-stock-photos-images-hd-wallpaper.jpg');
+         height: 120px ;
+         font-size:80PX ;
+         margin-top: 0px;
+         margin-left: 200px;
+         width: 70%;
+         height: 50%;
+      }
+      
+      .jumbotron{
+         align-self: center;
+
+      }
+      .input{
+         padding: 5px;
+         border: 5px;
+         border-style: solid;
+         border-radius: 5;
+         display: inline-block;
+         background-color: Grey;
+        opacity: 50%;
+         width: 500PX;
+          text-decoration-color: white;
+       }
+       ::placeholder {
+         color: white;
+       }
+      
+       .example1 {
+        height: 50px;	
+        overflow: hidden;
+        position: relative;
+       }
+       .example1 h3 {
+        font-size: 3em;
+        color: White;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        /* Starting position */
+        -moz-transform:translateX(100%);
+        -webkit-transform:translateX(100%);	
+        transform:translateX(100%);
+        /* Apply animation to this element */	
+        -moz-animation: example1 15s linear infinite;
+        -webkit-animation: example1 15s linear infinite;
+        animation: example1 15s linear infinite;
+       }
+       /* Move it (define the animation) */
+       @-moz-keyframes example1 {
+        0%   { -moz-transform: translateX(100%); }
+        100% { -moz-transform: translateX(-100%); }
+       }
+       @-webkit-keyframes example1 {
+        0%   { -webkit-transform: translateX(100%); }
+        100% { -webkit-transform: translateX(-100%); }
+       }
+       @keyframes example1 {
+        0%   { 
+        -moz-transform: translateX(100%); /* Firefox bug fix */
+        -webkit-transform: translateX(100%); /* Firefox bug fix */
+        transform: translateX(100%); 		
+        }
+        100% { 
+        -moz-transform: translateX(-100%); /* Firefox bug fix */
+        -webkit-transform: translateX(-100%); /* Firefox bug fix */
+        transform: translateX(-100%); 
+        }
+       }

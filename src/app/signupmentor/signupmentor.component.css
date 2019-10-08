@@ -1,0 +1,24 @@
+ 
+  .b2{
+    background-image:url(/assets/img/welcomebg.jpg) ;
+     
+
+ }  
+ form{
+     margin-left: 300px;
+ }
+input{
+  padding: 5px;
+  border: 5px;
+  border-style: solid;
+  border-radius: 5;
+  display: inline-block;
+  background-color: Grey;
+ opacity: 50%;
+  width: 500PX;
+   text-decoration-color: white;
+}
+
+::placeholder {
+color: white;
+}

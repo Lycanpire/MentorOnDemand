@@ -1,0 +1,44 @@
+input{
+    padding: 5px;
+    border: 5px;
+    border-style: solid;
+    border-radius: 5;
+    display: inline-block;
+    background-color: Grey;
+   opacity: 50%;
+    width: 500PX;
+     text-decoration-color: white;
+  }
+  .form{
+      margin-left: 400px;
+width: 300px   }
+.container{
+   color:white;
+}
+  .h1{
+    color:white;
+ }
+ ::placeholder{
+     color:white;
+ }
+
+.form-control{
+    color:white;
+ }
+ .h3{
+    color:white;
+ }
+ 
+  .b2{
+    background-image:url(/assets/img/welcomebg.jpg) ;
+     
+
+ }  
+ .container{
+     background-image: url(/assets/img/welcomebg.jpg);
+ }
+
+
+::placeholder {
+color: white;
+}

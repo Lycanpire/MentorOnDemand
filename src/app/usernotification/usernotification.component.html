@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>User Menu</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+
+<body class="b2">
+	<header style="background: url(welcome.jpg); height: 120px ;font-size:80PX ;margin-left:300px;">
+		<Strong style="color: white;text-shadow: 0 8px 16px rgba(255,255,255,0.6);" >Coder's Dashboard</Strong></header>
+
+
+
+<button class="btn btn-primary" onclick="myFunction()"  style="background-color: transparent; font-size: 60px ;margin-left:350px;">CHOOSE AN OPTION</button><br>
+
+<div class="container-fluid well" style="background: black">
+<div class="row"> 
+
+<div class="dropdown col-lg-3">
+  <button class="btn btn-primary" type="button" data-toggle="dropdown" style="width: 100% ;border: 5px">Trainings<span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Machine Learning</a></li>
+    <li><a href="#">Web Develepment</a></li>
+    <li><a href="#">App develepment</a></li>
+  </ul>
+  
+
+</div>
+
+  <a routerLink="/searchtraining"  class=" col-lg-3 btn btn-primary" style="background-color: transparent; font-size: 20px; margin-left: 0px;margin-right: 50px; width:15%;">Search Trainings</a>
+  <a routerLink="/userprofile"  class="col-lg-3 btn btn-primary" style="background-color: transparent; font-size: 20px;  ">User Profile</a>
+ 
+  <a routerLink="/home" class="col-lg-3 btn btn-primary"  style="background-color: transparent; margin-left: 40px;font-size: 20px;">Logout</a>
+</div>
+  <div class="row">
+  
+  <a routerLink="/currenttraining"  class="col-lg-4 btn btn-primary" style="background-color: transparent; font-size: 20px;  ">Current Trainings</a>
+  <a routerLink="/usernotification"  class=" col-lg-4 btn btn-primary"  style="background-color: transparent; font-size: 20px; box-shadow: 0 8px 16px rgba(255,255,255,0.6);" onclick="alert('No notification');">Notification</a>
+  
+  <a routerLink="/userpayment"  class=" col-lg-4 btn btn-primary" style="background-color: transparent; font-size: 20px;  ">Completed Trainings</a>
+ </div>
+</div>
+
+
+<marquee scrollamount="15"><H1 style="color: aliceblue">Check Again Soon!!</H1></marquee>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>

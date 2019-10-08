@@ -1,0 +1,31 @@
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body class="b2" >
+<form class="form">
+<div class="jumbotron" style="background-color: transparent;" >
+<div class="container">
+<h1 style="color: white"><strong>Sign In</strong></h1>
+<LABEL style="color: white">UserName</LABEL><br>
+<input type="text" [(ngModel)]="newu.userName" name="UserName" placeholder="Enter Your userName" required=""><br>
+<LABEL style="color: white">Password</LABEL><br>
+<input type="Password" [(ngModel)]="newu.password" name="pass" placeholder="Enter a Password" required><br><br><br>
+<button (click)="authenticate(newu.userName,newu.password)"  class="btn btn-primary" style="background-color: transparent ;font-size: 30px">Sign In</button>
+
+<div>
+    
+<a routerLink="/signupuser" style="color: oRANGE" ><h3><b>Forgot Password??</b></h3></a>
+</div>
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+</form>
+
+
+</body>

@@ -1,0 +1,60 @@
+<title>User Sign Up </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body class="b2">
+<form class="form" >
+
+<div class="container" style="margin-left: 50px">
+<h1 class="h1" ><strong>Sign Up</strong></h1>
+
+<div>
+        <div class="container">
+                <div class="form-container sign-in-container">
+                    <form >
+                     <h1>Create Account</h1>
+                     <div class="form-group">
+                    <input type="email" [(ngModel)]="newu.email" placeholder="Email" name="email" class="form-control" id="email" >
+                  </div>
+                  <div class="form-group">
+                    <input [(ngModel)]="newu.firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName" required />
+                  </div>
+                  <div class="form-group">
+                    <input [(ngModel)]="newu.lastName" placeholder="Last name" name="lastName" class="form-control" id="lastName" required />
+                  </div>        
+                    <div class="form-group">
+                    <input [(ngModel)]="newu.contactNumber" placeholder="Contact Number" name="contactNumber" class="form-control" id="contactNumber" required>
+                  </div>
+                <div class="form-group">
+                    <input [(ngModel)]="newu.linkedinUrl" placeholder="linkedinUrl" name="linkedinUrl" class="form-control" id="linkedinUrl" required>
+                  </div>
+                        <div class="form-group">
+                    <input [(ngModel)]="newu.password" placeholder="password" name="password" class="form-control" id="password" required>
+                  </div>
+                        <div class="form-group">
+                    <input [(ngModel)]="newu.userName" placeholder="userName" name="userName" class="form-control" id="userName" required> 
+                  </div>
+                
+                      
+                
+                        <input class="hidden" [(ngModel)]="newu.active" value="active" [ngModelOptions]="{standalone: true}">
+                        <a routerLink="/signinuser" >   <button (click)="createUser()" class="btn btn-primary" style="background-color: transparent;">Sign Up</button></a>
+                    </form>
+                  </div></div>
+
+ 
+<h3 class="h3" >Have an Account??</h3>
+<a routerLink="/signinuser" style="color: oRANGE" ><h3><b>Login</b></h3></a>
+<br><br><br><br><br>
+
+</div></div>
+
+
+</form>
+<br><br><br><br>
+<br><br><br><br><br><br><br><br>
+</body>
+

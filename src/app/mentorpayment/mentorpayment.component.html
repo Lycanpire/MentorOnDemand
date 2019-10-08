@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+</script>
+
+<head>
+	<title>Mentor's Dashboard</title>
+
+<meta charset="utf-8">
+
+</head>
+
+
+<body class="b2">
+	<header class="h1"  style=" height: 120px ;font-size:80PX ;margin-top: 0px; ">
+		<Strong style="color: white;text-shadow: 0 8px 16px rgba(255,255,255,.6); margin-left:300px; "  >Mentor's Dashboard</Strong></header>
+
+
+	
+
+<button class="btn btn-primary"   style="background-color: transparent; font-size: 60px;margin-left:350px;">CHOOSE AN OPTION</button><br>
+
+<div class="container-fluid well" style="background: black">
+<div class="row"> 
+
+	<a href="/mentornotification"  class="col-lg-4  btn btn-primary"  style="background-color: transparent; font-size: 20px;" onclick="alert('No notification');">Notification</a>
+  <a routerLink="/mentormenu"  class="col-lg-4 btn btn-primary" style="background-color: transparent; font-size: 20px;  ">Mentor Profile</a>
+
+  <a routerLink="/home"  class="col-lg-4  btn btn-primary"  style="background-color: transparent; font-size: 20px;">Logout</a>
+</div>
+  <div class="row">
+  
+  <a routerLink="/mentorcurrenttraining"  class="col-lg-4 btn btn-primary" style="background-color: transparent; font-size: 20px; ">Trainings</a>
+  <a routerLink="/editskills"  class="col-lg-4 btn btn-primary" style="background-color: transparent; font-size: 20px; ">Edit Skills</a>
+  <a routerLink="/mentorpayment"  class="col-lg-4 btn btn-primary" style="background-color: transparent; font-size: 20px; box-shadow: 0 8px 16px rgba(255,255,255,0.6);  ">Manage Payments</a>
+ </div>
+</div>
+
+
+<h4 class="modal-title">  Payment Details</h4>
+     
+<div class="modal-body">
+ <table class="table table-hover table-bordered" style="width: 80%; margin-left: 10%;">
+     <thead>
+         <tr class="info">
+           <th class="hidden">Id</th>
+           <th>Id</th>
+           <th>Technology Name</th>
+   
+           <th>Amount To Be Paid</th>
+           <th>Remarks</th>
+           <th>Amount Paid</th>
+       <th></th>
+          
+         </tr>
+         </thead>
+         <tbody>
+         <tr *ngFor="let user of paym"  class="active">
+             <td>{{user.id}}</td>
+           <td>{{user.techName}}</td>
+   
+ 
+           <td>{{user.amount}}</td>
+           <td>{{user.remarks}}</td>
+
+           <td>{{user.totalAmountToMentor}}</td>
+           <td><button class="btn btn-primary btn-lg"  (click)="toggleId(user.totalAmountToMentor,user.id)"  > Withdraw Money</button></td>
+         
+         
+         </tr>
+         </tbody>
+</table><br>
+<div *ngIf="displayId">
+
+<input type="text" class="form-group" style="width: 30%; height:60px; margin-left: 35%;"[(ngModel)]="withdrawAmount"  name="Amt" class="form-control" id="Amt" placeholder="Enter amount to be withdrawn">
+<br>
+<button type="button" class="btn btn-lg btn-success"  style="width: 13%; margin-left: 43%;" (click)="Withdraw(withdrawAmount)" ><span class="glyphicon glyphicon-ok"></span> Withdraw</button>
+
+</div>
+ 
+
+<br>
+<br>   
+<br><br><br><br><br><br><br><br>
+<br>
+<br>   
+<br><br><br><br><br><br><br><br>
+</div>
+</body>
+</html>

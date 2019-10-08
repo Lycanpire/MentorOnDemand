@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<script>
+function myFunction() {
+  alert("Please Choose From Below Options");
+}
+</script>
+
+<head>
+	<title>Mentor's Dashboard</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+
+<body class="b2">
+	<header class="h1"  style=" height: 120px ;font-size:80PX ;margin-top: 0px; ">
+		<Strong style="color: white  ;text-shadow: 0 8px 16px rgba(255,255,255,.6); margin-left:300px;" >Mentor's Dashboard</Strong></header>
+
+
+	
+
+<button class="btn btn-primary" onclick="myFunction()"  style="background-color: transparent; font-size: 60px;margin-left:350px;">CHOOSE AN OPTION</button><br>
+
+<div class="container-fluid well" style="background: black">
+<div class="row"> 
+
+	<a routerLink="/mentornotification"  class="col-lg-4  btn btn-primary"  style="background-color: transparent; font-size: 20px;box-shadow: 0 8px 16px rgba(255,255,255,0.6);" onclick="alert('No notification');">Notification</a>
+  <a routerLink="/mentormenu"  class="col-lg-4 btn btn-primary" style="background-color: transparent; font-size: 20px;  ">Mentor Profile</a>
+
+  <a routerLink="/home"  class="col-lg-4  btn btn-primary"  style="background-color: transparent; font-size: 20px;">Logout</a>
+</div>
+  <div class="row">
+  
+  <a routerLink="/mentorcurrenttraining"  class="col-lg-4 btn btn-primary" style="background-color: transparent; font-size: 20px; ">Trainings</a>
+  <a routerLink="/editskills"  class="col-lg-4 btn btn-primary" style="background-color: transparent; font-size: 20px; ">Edit Skills</a>
+  <a routerLink="/mentorpayment"  class="col-lg-4 btn btn-primary" style="background-color: transparent; font-size: 20px; ">Manage Payments</a>
+ </div>
+</div>
+
+
+<br>
+<br>   
+<marquee scrollamount="15"><H1 style="color: aliceblue">Check Again Soon!!</H1></marquee>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>

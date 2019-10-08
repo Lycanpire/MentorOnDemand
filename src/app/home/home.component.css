@@ -1,0 +1,32 @@
+.b1
+{background-image: url(/assets/img/welcomebg.jpg);
+   color: aliceblue; 
+    }
+    .h1{
+        height: 120px ;
+         font-size:70PX ;
+         margin-top: 0px;
+         margin-left: 200px;
+         width: 70%;
+         height: 50%;
+      }
+      
+      .jumbotron{
+         align-self: center;
+
+      }
+      .input{
+         padding: 5px;
+         border: 5px;
+         border-style: solid;
+         border-radius: 5;
+         display: inline-block;
+         background-color: Grey;
+        opacity: 50%;
+         width: 500PX;
+          text-decoration-color: white;
+       }
+       ::placeholder {
+         color: white;
+       }
+           
